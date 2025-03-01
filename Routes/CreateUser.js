@@ -3,8 +3,8 @@ const router = express.Router()
 const User = require('../models/User')
 const { body, validationResult } = require('express-validator')
 const bcrypt = require('bcrypt')
-const jwt= require('jsonwebtoken')
-const jwtSecret="pratapmajgehfjfjfhfbdndggg"
+const jwt= require('jsonwebtoken');
+const jwtSecret="pratapmajgehfjfjfhfbdndggg";
 router.post("/createuser",
     [
         body('email').isEmail(),

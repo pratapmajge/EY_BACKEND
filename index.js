@@ -16,7 +16,7 @@ app.use((req,res,next)=>{
 app.use(express.json())
 app.use('/api' ,require('./Routes/CreateUser.js'))
 app.get('/', (req , res) =>{
-    res.send('hello');
+    res.send('hello')
 })
 
 app.listen(port , () =>{
